@@ -16,10 +16,23 @@ def is_isogram(string):
         return False
 
 
-userinput1 = input("Введите строку: ")
-print(is_isogram(userinput1))
+# userinput1 = input("Введите строку: ")
+# print(is_isogram(userinput1))
 
 
 # is_isogram('kjaldkNDJASKDJ')
 def fibonacci(n: int) -> int:
-    return 0
+    if n == 0:
+        return 0
+    elif n == 1 or n == 2:
+        return 1
+    else:
+        tempinteger = fibonacci(n - 1) + fibonacci(n - 2)
+        # print(tempinteger)
+        return tempinteger
+
+    # tempinteger = fibonacci(n - 1) + fibonacci(n - 2)
+    # print(tempinteger)
+    # return tempinteger
+
+print(fibonacci(13))
