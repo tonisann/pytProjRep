@@ -14,7 +14,11 @@ def digital_root(n):
         newmas.append(tempint)
         i += 1
 
+    print(newmas)
+    print(type(newmas))
     temnfff = sum(newmas)
+
+    print(len(newmas))
 
     print(temnfff)
     print(type(temnfff))
